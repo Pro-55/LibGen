@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">LibGen</string>
+
+    <string name="label_covers">Covers</string>
+    <string name="label_new_entry">New Entry</string>
+
+    <string name="hint_book_name">Book Name</string>
+    <string name="hint_price">Price</string>
+    <string name="hint_issued_on">Issued On</string>
+    <string name="hint_author">Author:</string>
+    <string name="hint_covers">Covers:</string>
+
+    <string name="btn_submit">Submit</string>
+    <string name="btn_add_covers">Add Covers</string>
+
+    <string name="msg_permissions">Device permissions required!</string>
+
+</resources>

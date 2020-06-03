@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/listingsFragment">
+    <fragment
+        android:id="@+id/listingsFragment"
+        android:name="com.example.libgen.ui.listings.ListingsFragment"
+        android:label="ListingsFragment"
+        tool:layout="@layout/fragment_listings">
+        <action
+            android:id="@+id/navigateListingsToCovers"
+            app:destination="@id/coversFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/navigateListingsToNewEntry"
+            app:destination="@id/newEntryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/newEntryFragment"
+        android:name="com.example.libgen.ui.entry.NewEntryFragment"
+        android:label="NewEntryFragment"
+        tool:layout="@layout/fragment_new_entry" />
+    <fragment
+        android:id="@+id/coversFragment"
+        android:name="com.example.libgen.ui.covers.CoversFragment"
+        android:label="CoversFragment"
+        tool:layout="@layout/fragment_covers">
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+</navigation>
